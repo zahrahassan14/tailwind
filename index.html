@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiking Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Adding custom color if it's not in the Tailwind configuration */
+        .bg-navy {
+            background-color: #1a202c;
+            /* Replace with your desired blue color */
+        }
+
+        .text-navy {
+            color: #1a202c;
+            
+        }
+
+        .bg-yellow-custom {
+            background-color: #fbbf24; 
+        }
+
+        .text-white-custom {
+            color: #ffffff; 
+        }
+
+        .article-number {
+            position: absolute;
+            font-size: 10rem;
+            font-weight: 800;
+            color: rgba(255, 255, 255, 0.1);
+            z-index: 0;
+            top: 35%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        .article-number1 {
+            position: absolute;
+            font-size: 10rem;
+            font-weight: 800;
+            color: rgba(255, 255, 255, 0.1);
+            z-index: 0;
+            top: -15%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        .article-content {
+            position: relative;
+            z-index: 10;
+        }
+
+        .relative-container {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body class="bg-navy text-white font-sans">
+    <!-- Header -->
+    <header class="relative h-screen bg-cover bg-center"
+        style="background-image: url('https://img.freepik.com/premium-photo/beautiful-ancient-mountains-sunset-evening-sunlight-fog_158863-5182.jpg?w=900');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <nav class="absolute top-0 left-0 right-0 p-6 flex justify-between items-center">
+            <h1 class="text-3xl font-bold">MATYN</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:text-yellow">Equipment</a></li>
+                <li><a href="#" class="hover:text-yellow">Tips</a></li>
+                <li><a href="#" class="hover:text-yellow">Articles</a></li>
+            </ul>
+            <button class="text-sm border border-yellow px-4 py-2 rounded hover:bg-yellow hover:text-navy transition">
+                Sign Up
+            </button>
+        </nav>
+        <div class="container mx-auto flex flex-col justify-center h-full px-4">
+            <div class="text-center max-w-2xl mx-auto">
+                <div class="mb-8 bg-yellow-custom text-white-custom px-4 py-2 inline-block rounded-lg">
+                    <span class="text-sm uppercase">Hiking Starter Guide</span>
+                </div>
+                <h2 class="text-5xl md:text-6xl font-bold leading-tight mb-4">
+                    Be Prepared For The <br> Mountains And Beyond!
+                </h2>
+                <p class="text-lg text-gray-300">
+                    Discover breathtaking vistas and unlock your adventurous spirit with our curated hiking tips.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-16 bg-navy">
+        <div class="container mx-auto px-4 space-y-16">
+            <!-- Article 1 -->
+            <div class="relative-container flex flex-col lg:flex-row lg:space-x-8 items-center">
+                
+                <div class="lg:w-1/2 mb-8 lg:mb-0 relative article-content">
+                    <img src="https://i.pinimg.com/564x/52/d4/af/52d4affaf980954da669e9a2ccb77f76.jpg"
+                        alt="Hiking level" class="rounded-lg shadow-lg">
+                </div>
+                <div class="lg:w-1/2 article-content">
+                    <div class="article-number1">01</div>
+                    <h3 class="text-yellow text-lg font-semibold mb-2">Step by Step Guide</h3>
+                    <h2 class="text-2xl font-bold mb-4">What level of hiker are you?</h2>
+                    <p class="text-gray-300">
+                        Determining your hiking experience level is important for planning the right trails and
+                        ensuring a safe adventure.
+                    </p>
+                    <a href="#" class="text-yellow mt-4 inline-block">Learn more →</a>
+                </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="relative-container flex flex-col lg:flex-row-reverse lg:space-x-8 items-center">
+                <div class="article-number">02</div>
+                <div class="lg:w-1/2 mb-8 lg:mb-0 relative article-content">
+                    <img src="https://i.pinimg.com/474x/ab/e4/47/abe447aa3711493b99944e792c69edca.jpg" alt="Hiking gear"
+                        class="rounded-lg shadow-lg">
+                </div>
+                <div class="lg:w-1/2 article-content">
+                    <h3 class="text-yellow text-lg font-semibold mb-2">Gear Essentials</h3>
+                    <h2 class="text-2xl font-bold mb-4">Picking the right Hiking Gear!</h2>
+                    <p class="text-gray-300">
+                        Equip yourself with the best gear to ensure comfort and <br>
+                        safety during your hiking adventures. <br>
+                        Start your journey with us today and enjoy.
+                    </p>
+                    <a href="#" class="text-yellow mt-4 inline-block">Learn more →</a>
+                </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="relative-container flex flex-col lg:flex-row lg:space-x-8 items-center">
+                
+                <div class="lg:w-1/2 mb-8 lg:mb-0 relative article-content">
+                    <img src="https://i.pinimg.com/564x/91/b6/be/91b6be753cdfe36bdb41fe9700a00675.jpg"
+                        alt="Map and Timing" class="rounded-lg shadow-lg">
+                </div>
+                <div class="lg:w-1/2 article-content">
+                    <div class="article-number1">03</div>
+                    <h3 class="text-yellow text-lg font-semibold mb-2">How to Plan Your Hike</h3>
+                    <h2 class="text-2xl font-bold mb-4">Understand Your Map & Timing</h2>
+                    <p class="text-gray-300">
+                        Navigating trails with the right map reading skills ensures you stay on track and safe during
+                        your hikes.
+                    </p>
+                    <a href="#" class="text-yellow mt-4 inline-block">Learn more →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy py-8">
+        <div class="container mx-auto px-4 text-gray-400">
+            <div class="flex justify-between items-center">
+                <span class="text-sm">&copy; 2024 MATYN. All rights reserved.</span>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-yellow">Home</a></li>
+                    <li><a href="#" class="hover:text-yellow">About Us</a></li>
+                    <li><a href="#" class="hover:text-yellow">Contact</a></li>
+                    <li><a href="#" class="hover:text-yellow">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
